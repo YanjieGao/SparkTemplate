@@ -1,3 +1,7 @@
+import sbt._
+import Keys._
+import sbtassembly.Plugin._
+import AssemblyKeys._
 name := "SparkTemplate"
 
 version := "1.0"
