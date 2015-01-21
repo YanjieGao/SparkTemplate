@@ -11,7 +11,7 @@ object testkafka {
     testKafka()
   }
   def testKafka(): Unit = {
-    val sparkConf = new SparkConf().setAppName("KafkaWordCount")
+    val sparkConf = new SparkConf().setAppName("KafkaWordCount").setMaster("spark://10.190.172.43:7077")
     val sc = new SparkContext(sparkConf)
     import org.apache.spark.streaming.{Minutes, Seconds, StreamingContext}
     import StreamingContext._
