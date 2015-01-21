@@ -7,6 +7,9 @@ import org.apache.spark.{SparkContext, SparkConf}
  * Created by Administrator on 1/21/2015.
  */
 object testkafka {
+  def main(args: Array[String]): Unit = {
+    testKafka()
+  }
   def testKafka(): Unit = {
     val sparkConf = new SparkConf().setAppName("KafkaWordCount")
     val sc = new SparkContext(sparkConf)
